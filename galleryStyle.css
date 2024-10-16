@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Sofia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Great+Vibes&family=Sofia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Great+Vibes&family=Nanum+Gothic:wght@400;700;800&family=Sofia&display=swap');
+.container {
+    width: 80%; /* Scales relative to the browser window */
+    padding: 2vw; /* Padding scales based on viewport width */
+  }
+  body{
+    background-color: rgb(143, 131, 90);
+    color: rgb(255, 255, 255);
+    min-width: 80%;
+    max-width: 100%;
+    font-family: "Nanum Gothic";
+    font-size: medium;
+    
+}
+footer{
+    border: 4px solid rgb(129, 79, 17);
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+
+}
+h2{
+    text-align: center;
+}
+div a.banner img{ /*banner picture*/
+    margin: 0%;
+    padding: 0 0;
+    min-width: 1200px;
+    max-width: 1500px;
+    border: 8px inset  rgb(214, 142, 53); 
+    border-bottom: 8px outset rgba(219, 148, 60, 0.733);
+    /* max-width: 100%; */
+   /* min-width: 100%; */
+   max-height: 350px;
+   min-height: 350px;
+   /* margin:0 0; */
+}
+#navbar #sliding-header{
+    background-color: rgba(143, 131, 90, 0.952);
+    overflow: hidden;
+    width: 100%;
+    height: 150px;
+    position: static;
+
+}
+#heading{
+    text-align: center;
+    color: rgb(56, 43, 9);
+}
+#sliding-header{
+    position:absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+
+}
+div#bannerContainer{
+    /* border: 4px solid blue; */
+     border: 4px inset  rgb(214, 142, 53);  
+    border-bottom : 4px outset rgba(219, 148, 60, 0.733);
+    margin-top: -10px;
+    /* margin-left: -10px; */
+    align-items: center;
+    justify-content: center;    
+    height: 400px;
+    width: 10px;
+    /* background-position: center; */
+    background: url("./LionelMessiBackground.jpeg") center/100% 100% no-repeat padding-box content-box;
+}
+/* #navbar div#sliding-header{
+    border: 4px solid rgba(128, 99, 20, 0.384);
+} */
+#navbar #sliding-header h1#heading{  
+    /*"Lionel Messi FanPage"*/
+    font-family:"Great Vibes";
+    font-size: 70px;
+   /* display: inline-block;*/
+    text-align: center;
+    letter-spacing: 6px;
+    white-space: nowrap;
+    position: sticky;
+    /*overflow: hidden;*/
+
+    
+}
+#navbar #sliding-header h1#heading {
+    
+    /*display: inline-block;
+    /* position: absolute; */
+    top: 0;
+    left: 100%;
+
+    animation-name: sliding-header; 
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
+}
+@keyframes sliding-header {
+    0%{
+        transform: translateX(-100%);
+        color: rgb(185, 142, 34);
+        opacity: 1;
+    }
+    50%{
+        transform: translateX(0%);        
+        color: rgb(56, 43, 9);
+        opacity: 1;
+    }
+    /* 90%{
+        transform: translateX(0%);        
+        color: rgb(56, 43, 9);
+        opacity: 1;
+    } */
+    100%{
+        transform: translateX(100%);        
+        color: rgb(177, 129, 7);
+        opacity: 1;
+    }
+    from{
+        right:-100%
+    }
+    to{
+        right: calc(100% - 0px);
+
+    }
+    
+}
+/* NAVIGATION BAR BEGINS */
+div#nav ul.nav {
+   
+    display: flex;
+    justify-content:space-between;
+    padding: 30px 70px;
+    min-width: 70%;
+    max-width: 100%;
+    /* margin: 0 50px; */
+    
+
+}
+div#nav{
+    
+    padding: 0 50px;
+    min-width: 70%;
+    max-width: 100%;
+    align-items: center;
+    margin: 0 10px;
+    display: flex;
+    justify-content:center;
+}
+
+ul.nav{
+    display: flex; 
+    justify-content:space-around;
+}
+ul.nav li{
+    color: rgb(56, 43, 8);
+    font-weight: 800;
+    font-size:medium;
+    text-decoration: none;
+    text-shadow: 2px 2px 5px rgb(112, 61, 3);
+    /* padding: 8px 25px; */
+}
+ ul.nav button{
+    border: 5px inset  rgb(214, 142, 53); 
+    border-bottom: 5px outset rgba(219, 148, 60, 0.733);
+    background-color: rgb(143, 131, 90);
+}
+ul.nav .dropdown button{
+    border: 5px inset  rgb(214, 142, 53);
+    border-bottom: 5px outset rgba(219, 148, 60, 0.733);
+    background-color: rgb(143, 131, 90);
+}
+ ul.nav button li a {
+    color: rgb(56, 43, 8);
+    font-weight: 800;
+    font-size:medium;
+    text-decoration: none;
+    text-shadow: 2px 2px 5px rgb(112, 61, 3);
+}
+div#nav ul.nav button li a:hover{
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 140%;
+    color: rgba(77, 38, 7, 0.836);
+    text-decoration:solid;
+    text-shadow: 0px 2px 2px rgb(112, 61, 3);
+    text-transform: uppercase;
+}
+#nav ul.nav li a{ /*navigation bar link*/
+    color: rgb(56, 43, 8);
+    font-weight: 800;
+    font-size:medium;
+    text-decoration: none;
+    text-shadow: 2px 2px 5px rgb(112, 61, 3);
+}
+#nav ul.nav li a:hover
+    { /*hovering navigation bar link*/
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 140%;
+    color: rgba(77, 38, 7, 0.836);
+    text-decoration:solid;
+    text-shadow: 0px 2px 2px rgb(112, 61, 3);
+    text-transform: uppercase;
+    }
+#nav ul.nav button{
+    border: 5px inset  rgb(214, 142, 53); 
+    border-bottom: 5px outset rgba(219, 148, 60, 0.733);
+    background-color: rgb(143, 131, 90);
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropbtn{
+    background-color: rgb(185, 142, 34);
+    padding: 10px;
+    cursor: pointer;
+}
+.dropdown .dropbtn{
+    border: none;
+    color: rgb(56, 43, 8);
+    /* background-color: rgb(177, 129, 7) ; This doesn't seem right */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+.dropdown .dropbtn:hover{
+    color: rgb(56,43,8);
+    /* background-color: rgb(177, 129, 7); */
+}
+.dropdown-content {
+    display:none;
+    position: absolute;
+    background-color: rgb(177, 129, 7);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content button{
+    color: rgb(56, 43, 8);
+    padding: 12px 5px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    width:170px ;
+}
+.dropdown .dropdown-content:hover{
+    font-size: 80px;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.dropdown-content button:hover{
+    background-color: rgb(177, 129, 7);
+}
+/* NAVIGATION BAR ENDS */
+
+#galleryNav ul#nav li{
+    color: rgb(56, 43, 8);
+    font-weight: 800;
+    font-size:medium;
+    text-decoration: none;
+    text-shadow: 2px 2px 5px rgb(112, 61, 3);
+    padding: 8px 25px;
+        
+}
+
+div#galleryNav ul#nav{
+    display: flex; 
+    justify-content:space-evenly;
+    /* border: 4px solid blue; */
+    padding: 0 100px;
+}
+#nav {
+    list-style-type: none;
+}
+#galleryNav ul#nav button{
+    border: 5px inset  rgb(214, 142, 53);
+    border-bottom: 5px outset rgba(219, 148, 60, 0.733);
+    background-color: rgb(143, 131, 90);
+    
+}
+#galleryNav ul#nav button li a {
+    color: rgb(56, 43, 8);
+    font-weight: 800;
+    font-size:medium;
+    text-decoration: none;
+    text-shadow: 2px 2px 5px rgb(112, 61, 3);
+}
+#galleryNav div ul#nav button li a:hover{
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 140%;
+    color: rgba(77, 38, 7, 0.836);
+    text-decoration:solid;
+    text-shadow: 0px 2px 2px rgb(112, 61, 3);
+    text-transform: uppercase;
+}
+#navbar ul#nav li a{ /*navigation bar link*/
+    color: rgb(56, 43, 8);
+    font-weight: 800;
+    font-size:medium;
+    text-decoration: none;
+    text-shadow: 2px 2px 5px rgb(112, 61, 3);
+}
+#navbar ul#nav li a:hover
+    { /*hovering navigation bar link*/
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 140%;
+    color: rgba(77, 38, 7, 0.836);
+    text-decoration:solid;
+    text-shadow: 0px 2px 2px rgb(112, 61, 3);
+    text-transform: uppercase;
+}
+div#slideshow{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;  
+    max-width: 1600px;
+    margin: 10px;
+    padding-top: 60px;
+    /* border: 4px solid green; */
+    /* margin: auto; */
+   
+    /* position: relative;
+    height: 800px;
+    align-items: center; */
+    /*margin: 0 280px; */
+       
+
+}
+div#slideshow-container{
+    position: relative;
+    width: 100%;    
+    height: 750px;
+    overflow: hidden;
+    /* border: 4px solid rgb(247, 9, 9); */
+    /* justify-content:center;
+    align-items: center; */
+}
+div#galleryBody{
+    display:flex;
+    transition: transform 0.5s ease-in-out; 
+    /* border: 4px solid #170ace; */
+    height: 100%;
+    /* width: 2000%;
+    height: 700px; */
+    /* animation: slide 40s infinite;
+    border: 4px solid rgb(0, 77, 128);
+    margin: 30px 0;
+     */
+}
+/* div.image{
+    justify-content:center;
+    align-items: center;
+} */
+
+div#galleryBody div.image{
+    /* border: 4px solid #cbce0a; */
+    min-width: 1400px;
+    max-width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-size: contain;
+    /* align-items: center;
+    justify-content: center;
+    overflow: hidden; */
+    margin: 35px;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* border: 8px inset  rgb(214, 142, 53);  */
+    /* border-bottom: 8px outset rgba(219, 148, 60, 0.733); */
+    /* max-width: 100%; */
+   /* min-width: 100%; */
+   /* max-height: 350px; */
+   min-height: 720px;
+   
+}
+
+/* .image{
+    flex: 0 0 5.9%;   
+    transition: opacity 5s ease-in-out;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    
+    margin: 20px;
+    padding: 0 -50px;
+    border: 4px solid rgb(235, 231, 14);
+    
+    
+    height: 650px;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    
+    height: 100%;
+    animation: fade;
+} */
+/* @keyframes slide {
+    0% { transform: translateX(0%); }
+    5% { transform: translateX(0%); }
+    10% { transform: translateX(-5%); }
+    15% { transform: translateX(-5%); }
+    20% { transform: translateX(-10%); }
+    25% { transform: translateX(-10%); }
+    30% { transform: translateX(-15%); }
+    35% { transform: translateX(-15%); }
+    40% { transform: translateX(-20%); }
+    45% { transform: translateX(-20%); }
+    50% { transform: translateX(-25%); }
+    55% { transform: translateX(-25%); }
+    60% { transform: translateX(-30%); }
+    65% { transform: translateX(-30%); }
+    70% { transform: translateX(-35%); }
+    75% { transform: translateX(-35%); }
+    80% { transform: translateX(-40%); }
+    85% { transform: translateX(-40%); }
+    90% { transform: translateX(-45%); }
+    95% { transform: translateX(-45%); }
+    100% { transform: translateX(0%); }
+    
+} */
+
+.prev-img, .next-img{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+.next-img{
+    right:0;
+    border-radius: 3px 0 0 3px;
+}
+.prev-img:hover, .next-img:hover{
+    background-color: rgba(0,0,0,0.8);
+}
+/* Go to Top and Go to Bottom  */
+div#top, div#bottom{
+    text-align: left;    
+}
+div#top ul , div#bottom ul{
+    padding: 0;
+}
+div#top ul li , div#bottom ul li {
+    display: inline-block;
+    margin-right: 15px;    
+}
+div#top ul li a , div#bottom ul li a{
+    text-decoration: none;
+    padding: 8px 12px;
+    font-size: 15px;
+    font-weight: 800;
+    color: #694603;
+    text-transform: uppercase;
+    background-color: rgba(0,0,0,0.1);
+
+}
+/* div#galleryBody div{
+    display: flex;
+    display:contents;
+    justify-content: space-around;
+    height: 300px;
+    margin: 5px; 
+    border: 4px outset rgb(112, 61, 3);   
+
+} */
+

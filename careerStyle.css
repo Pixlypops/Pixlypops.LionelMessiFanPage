@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Sofia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Great+Vibes&family=Sofia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Great+Vibes&family=Nanum+Gothic:wght@400;700;800&family=Sofia&display=swap');
+.container {
+    width: calc(100%-10px); /* Scales relative to the browser window */
+    padding: 2vw; /* Padding scales based on viewport width */
+}
+body{
+    background-color: rgb(143, 131, 90);
+    color: rgb(255, 255, 255);
+    width: calc(100%-10px);
+    min-width: 80%;
+    max-width: 100%;
+    font-family: "Nanum Gothic";
+    font-size: medium;
+
+}
+div#bannerContainer{
+    /* border: 4px solid blue; */
+     border: 4px inset  rgb(214, 142, 53);  
+    border-bottom : 4px outset rgba(219, 148, 60, 0.733);
+    margin-top: -10px;
+    /* margin-left: -10px; */
+    align-items: center;
+    justify-content: center;    
+    height: 400px;
+    width: 100%;
+    /* background-position: center; */
+    background: url("./LionelMessiBackground.jpeg") center/100% 100% no-repeat padding-box content-box;
+}
+/* #bannerContainer img{
+    width: auto;
+    /* padding: 0 20%; */
+    /* align-items: center;
+    justify-content: center;
+
+   
+} */ 
+
+
+footer{
+    border: 4px solid rgb(129, 79, 17);
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+
+}
+h2{
+    text-align: center;
+}
+div a.banner img{ /*banner picture*/
+    margin: 0%;
+    padding: 0 10%;
+    min-width: 1200px;
+    max-width: 1600px;
+    /* border: 8px inset  rgb(214, 142, 53);  */
+    /* border-bottom: 8px outset rgba(219, 148, 60, 0.733); */
+    /* max-width: 100%; */
+   /* min-width: 100%; */
+   max-height: 350px;
+   min-height: 350px;
+   /* margin:0 0; */
+}
+#navbar #sliding-header{ /*Lionel Messi FanPage*/
+    background-color: rgba(143, 131, 90, 0.952);
+    overflow: hidden;
+    width: 100%;
+    height: 150px;
+    position: static;
+}
+#heading{
+    text-align: center;
+    color: rgb(56, 43, 9);
+}
+#sliding-header{
+    position:absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    
+}
+#navbar #sliding-header h1#heading{  
+    /*"Lionel Messi FanPage"*/
+    font-family:"Great Vibes";
+    font-size: 70px;
+   /* display: inline-block;*/
+    text-align: center;
+    letter-spacing: 6px;
+    white-space: nowrap;
+    position: sticky;
+    /*overflow: hidden;*/    
+}
+
+/* #navbar div#sliding-header{
+    /* border: 4px solid rgba(128, 99, 20, 0.384); */
+ */
+div#navbar div#sliding-header h1#heading{
+    /*"Lionel Messi FanPage"*/
+    font-family:"Great Vibes";
+    font-size: 70px;
+   /* display: inline-block;*/
+    text-align: center;
+    letter-spacing: 6px;
+    white-space: nowrap;
+    position: sticky;
+    /*overflow: hidden;*/
+}
+#navbar #sliding-header h1#heading {
+
+    /*display: inline-block;
+    /* position: absolute; */
+    top: 0;
+    left: 100%;
+
+    animation-name: sliding-header;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
+}
+@keyframes sliding-header {
+    0%{
+        transform: translateX(-100%);
+        color: rgb(185, 142, 34);
+        opacity: 1;
+    }
+    50%{
+        transform: translateX(0%);
+        color: rgb(56, 43, 9);
+        opacity: 1;
+    }
+    /* 90%{
+        transform: translateX(0%);
+        color: rgb(56, 43, 9);
+        opacity: 1;
+    } */
+    100%{
+        transform: translateX(100%);
+        color: rgb(177, 129, 7);
+        opacity: 1;
+    }
+    from{
+        right:-100%
+    }
+    to{
+        right: calc(100% - 0px);
+
+    }
+
+}
+div#careerBody {
+    /* border:4px solid rgba(128, 99, 20, 0.384); */
+    /* margin: 0 50px 0 50px; */
+    padding: 0 120px;
+    min-width: 1200px;
+    max-width: 1500px;
+
+}
+div#nav ul.nav {
+   
+    display: flex;
+    justify-content:space-between;
+    padding: 30px 40px;
+    min-width: 70%;
+    max-width: 100%;
+    /* margin: 0 50px; */
+    
+
+}
+
+div#nav{
+    
+    /* padding: 50px; */
+    min-width: 70%;
+    max-width: 100%;
+    align-items: center;
+    margin: 0 10px;
+    display: flex;
+    justify-content:center;
+}
+#nav ul.nav li{ /**/
+    /*border: 5px inset  rgb(214, 142, 53); 
+    border-bottom: 5px outset rgba(219, 148, 60, 0.733); */
+    padding: 8px 25px ;
+}
+
+ul.nav{
+    display: flex; 
+    justify-content:space-evenly;
+}
+
+ul.nav li{
+    color: rgb(56, 43, 8);
+    font-weight: 800;
+    font-size:medium;
+    text-decoration: none;
+    text-shadow: 2px 2px 5px rgb(112, 61, 3);
+    padding: 8px 25px;
+    
+}
+ul.nav button{
+    border: 5px inset  rgb(214, 142, 53);
+    border-bottom: 5px outset rgba(219, 148, 60, 0.733);
+    background-color: rgb(143, 131, 90);
+}
+ul.nav .dropdown button{
+    border: 5px inset  rgb(214, 142, 53);
+    border-bottom: 5px outset rgba(219, 148, 60, 0.733);
+    background-color: rgb(143, 131, 90);
+}
+ ul.nav button li a {
+    color: rgb(56, 43, 8);
+    font-weight: 800;
+    font-size:medium;
+    text-decoration: none;
+    text-shadow: 2px 2px 5px rgb(112, 61, 3);
+}
+div#nav ul.nav button li a:hover{
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 140%;
+    color: rgba(77, 38, 7, 0.836);
+    text-decoration:solid;
+    text-shadow: 0px 2px 2px rgb(112, 61, 3);
+    text-transform: uppercase;
+}
+#nav ul.nav li a{ /*navigation bar link*/
+    color: rgb(56, 43, 8);
+    font-weight: 800;
+    font-size:medium;
+    text-decoration: none;
+    text-shadow: 2px 2px 5px rgb(112, 61, 3);
+}
+#nav ul.nav li a:hover
+    { /*hovering navigation bar link*/
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 140%;
+    color: rgba(77, 38, 7, 0.836);
+    text-decoration:solid;
+    text-shadow: 0px 2px 2px rgb(112, 61, 3);
+    text-transform: uppercase;
+    }
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropbtn{
+    background-color: rgb(185, 142, 34);
+    padding: 10px;
+    cursor: pointer;
+}
+.dropdown .dropbtn{
+    border: none;
+    color: rgb(56, 43, 8);
+    /* background-color: rgb(177, 129, 7) ; This doesn't seem right */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+.dropdown .dropbtn:hover{
+    color: rgb(56,43,8);
+    /* background-color: rgb(177, 129, 7); */
+}
+.dropdown-content {
+    display:none;
+    position: absolute;
+    background-color: rgb(177, 129, 7);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content button{
+    color: rgb(56, 43, 8);
+    padding: 12px 5px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    width:170px ;
+}
+.dropdown .dropdown-content:hover{
+    font-size: 80px;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.dropdown-content button:hover{
+    background-color: rgb(177, 129, 7);
+}
+h2{  /* "About Lionel Messi" and "Background"*/
+    text-align: center;
+    
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 170%;
+    letter-spacing: 5px;
+    color: rgba(77, 38, 7, 0.836);
+    text-decoration:solid;
+    text-shadow: 0px 2px 2px rgb(112, 61, 3);
+    text-transform: uppercase;
+}
+
+
+p,h4{
+    padding: 0 90px;
+}
+h4{
+    font-size: larger;
+}
+ul#barcelonaList, ul {
+    padding: 0 140px;
+    list-style-type: circle;
+    
+}
+.nav {
+    list-style-type: none;
+}
+ 
+/* Go to Top and Go to Bottom  */
+div#top, div#bottom{
+    text-align: left;    
+}
+div#top ul , div#bottom ul{
+    padding: 0;
+}
+div#top ul li , div#bottom ul li {
+    display: inline-block;
+    margin-right: 15px;    
+}
+div#top ul li a , div#bottom ul li a{
+    text-decoration: none;
+    padding: 8px 12px;
+    font-size: 15px;
+    font-weight: 800;
+    color: #694603;
+    text-transform: uppercase;
+    background-color: rgba(0,0,0,0.1);
+
+}
